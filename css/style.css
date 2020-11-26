@@ -947,7 +947,7 @@ template {
   .slider {
     width: 100%;
   }
-  .map {
+  #map {
     width: 340px;
   }
 }
@@ -1028,7 +1028,7 @@ template {
   .booking {
     width: 100%;
   }
-  .map {
+  #map {
     width: 100%;
   }
   .newsletter-wrapper {
@@ -1062,5 +1062,11 @@ template {
   }
   .subscribe {
     width: 100%;
+  }
+}
+
+@media (max-width: 460px) {
+  .slider {
+    height: 179px;
   }
 }
