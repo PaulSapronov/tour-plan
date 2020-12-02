@@ -629,12 +629,12 @@ template {
 
 .hotel-slider__button--prev {
   left: 18px;
-  background-image: url(../img/arrow-prev.svg);
+  background-image: url(../img/svg/arrow-prev.svg);
 }
 
 .hotel-slider__button--next {
   right: 18px;
-  background-image: url(../img/arrow-next.svg);
+  background-image: url(../img/svg/arrow-next.svg);
 }
 
 .stars {
@@ -818,6 +818,137 @@ template {
   height: 100%;
 }
 
+.packages {
+  padding: 40px 0 70px 0;
+}
+
+.packages__icon {
+  margin-right: 15px;
+}
+
+.packages__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 65px;
+}
+
+.packages-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (minmax(500px, auto))[2];
+      grid-template-rows: repeat(2, minmax(500px, auto));
+  grid-gap: 30px;
+}
+
+.packages__card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 250px 21px 25px 32px;
+  width: 350px;
+  height: 500px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #0a223d;
+}
+
+.packages__card-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.packages__card-info {
+  color: #ffffff;
+  width: 100%;
+}
+
+.packages__card-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.packages__card-pricetag {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  margin-top: 24px;
+}
+
+.packages__card-pricetag-new {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.packages__card-button {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+  padding: 11px 27px;
+  border: none;
+  background-color: #ec1f46;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.packages__card-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin-top: 0;
+}
+
+.packages__card-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 11px;
+}
+
+.packages__card-offer {
+  top: 26px;
+  left: 0;
+  position: absolute;
+  background-color: #EC1F46;
+  padding: 4px 9px;
+  border-radius: 0px 4px 4px 0px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 13px;
+}
+
 .newsletter {
   position: relative;
   padding: 98px 0 87px 0;
@@ -941,7 +1072,7 @@ template {
   top: 13px;
   width: 70px;
   height: 47px;
-  background-image: url(../img/quote-left.svg);
+  background-image: url(../img/svg/quote-left.svg);
   background-repeat: no-repeat;
 }
 
@@ -952,7 +1083,7 @@ template {
   top: 118px;
   width: 70px;
   height: 47px;
-  background-image: url(../img/quote-right.svg);
+  background-image: url(../img/svg/quote-right.svg);
   background-repeat: no-repeat;
 }
 
@@ -975,12 +1106,12 @@ template {
 
 .reviews-slider__button--prev {
   left: 18px;
-  background-image: url(../img/arrow-prev-secondary.svg);
+  background-image: url(../img/svg/arrow-prev-secondary.svg);
 }
 
 .reviews-slider__button--next {
   right: 18px;
-  background-image: url(../img/arrow-next-secondary.svg);
+  background-image: url(../img/svg/arrow-next-secondary.svg);
 }
 
 .reviews-slider__profile {
