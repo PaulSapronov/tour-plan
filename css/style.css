@@ -505,7 +505,7 @@ template {
 }
 
 .hotel {
-  padding-top: 16px;
+  padding-top: 23px;
   padding-bottom: 70px;
 }
 
@@ -524,11 +524,11 @@ template {
 
 .hotel-info__offer {
   margin-left: 14px;
-  margin-top: 0px;
+  margin-top: 7px;
 }
 
 .hotel-info__name {
-  margin-top: 1px;
+  margin-top: 3px;
   margin-bottom: 0;
 }
 
@@ -642,6 +642,16 @@ template {
       flex-basis: 100%;
 }
 
+.stars__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 48px;
+}
+
 .offer {
   font-weight: 600;
   font-size: 10px;
@@ -655,7 +665,6 @@ template {
 .rating {
   max-width: 65px;
   min-height: 45px;
-  margin-top: 7px;
   text-align: center;
   color: #ffffff;
   background-color: #ec1f46;
@@ -826,11 +835,19 @@ template {
   margin-right: 15px;
 }
 
-.packages__title {
+.packages__info-text {
   font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160.6%;
+  margin-bottom: 45px;
+}
+
+.packages__title {
+  ffont-style: normal;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 36px;
+  line-height: 45px;
   text-align: center;
   text-transform: uppercase;
   margin-top: 0;
@@ -858,9 +875,13 @@ template {
   padding: 250px 21px 25px 32px;
   width: 350px;
   height: 500px;
-  border-radius: 6px;
+  border-radius: 10px;
   overflow: hidden;
   background-color: #0a223d;
+}
+
+.packages__card--large {
+  padding: 47px 21px 30px 411px;
 }
 
 .packages__card-image {
@@ -871,6 +892,11 @@ template {
   height: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.packages__card-image--large {
+  width: 50%;
+  height: 100%;
 }
 
 .packages__card-info {
@@ -897,7 +923,11 @@ template {
   line-height: 18px;
   -webkit-text-decoration-line: line-through;
           text-decoration-line: line-through;
-  margin-top: 24px;
+  margin-top: 21px;
+}
+
+.packages__card-pricetag--large {
+  margin-top: 33px;
 }
 
 .packages__card-pricetag-new {
@@ -926,6 +956,12 @@ template {
   font-size: 18px;
   line-height: 23px;
   margin-top: 0;
+  margin-bottom: 23px;
+}
+
+.packages__card-title--large {
+  margin-bottom: 25px;
+  margin-top: 5px;
 }
 
 .packages__card-text {
@@ -933,7 +969,18 @@ template {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
-  margin-bottom: 11px;
+  margin-bottom: 9px;
+}
+
+.packages__card-text--transform {
+  display: inline-block;
+  -webkit-transform: translateY(-15%);
+      -ms-transform: translateY(-15%);
+          transform: translateY(-15%);
+}
+
+.packages__card-text--large {
+  margin-bottom: 9px;
 }
 
 .packages__card-offer {
@@ -944,9 +991,28 @@ template {
   padding: 4px 9px;
   border-radius: 0px 4px 4px 0px;
   color: #fff;
+  font-style: normal;
   font-weight: 600;
-  font-size: 10px;
-  line-height: 13px;
+  font-size: 8px;
+  line-height: 10px;
+}
+
+.packages__card-offer--large {
+  width: 95px;
+  padding: 8px 12px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.packages__card--large {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-column: span 2;
+  width: 730px;
+  height: 500px;
 }
 
 .newsletter {
