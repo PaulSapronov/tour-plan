@@ -2211,6 +2211,9 @@ template {
     margin-top: 0;
     margin-bottom: 10px;
   }
+  .footer__disclaimer-link {
+    margin-right: 9px;
+  }
   .footer__disclaimer-pay {
     -ms-grid-column: 1;
     grid-column: 1;
