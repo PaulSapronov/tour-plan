@@ -2045,9 +2045,6 @@ template {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
-  .footer__disclaimer-pay {
-    margin-left: 43px;
-  }
 }
 
 @media (max-width: 576px) {
@@ -2203,9 +2200,13 @@ template {
         -ms-flex-order: -1;
             order: -1;
   }
+  .footer__disclaimer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .footer__disclaimer-ul {
-    max-width: 275px;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
   }
   .footer__disclaimer-pay {
     -ms-grid-column: 1;
