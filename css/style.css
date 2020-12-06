@@ -650,10 +650,13 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  max-width: 48px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.stars__group-item {
+  margin-right: 2px;
 }
 
 .offer {
@@ -1937,10 +1940,6 @@ template {
   .search__input {
     width: 243px;
   }
-  .stars {
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
-  }
   .hotel-name {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -1975,6 +1974,10 @@ template {
   }
   .hotel-slider {
     height: 350px;
+  }
+  .stars {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
   }
   .booking {
     width: 100%;
@@ -2120,7 +2123,7 @@ template {
     grid-auto-rows: minmax(15px, -webkit-min-content);
     grid-auto-rows: minmax(15px, min-content);
     grid-column-gap: 0;
-    grid-gap: 10px;
+    grid-row-gap: 10px;
   }
   .footer__logo {
     -ms-grid-row: 1;
