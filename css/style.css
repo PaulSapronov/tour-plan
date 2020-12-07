@@ -1483,6 +1483,7 @@ template {
   font-weight: normal;
   font-size: 12px;
   line-height: 15px;
+  color: #e0e0e0;
 }
 
 .footer__ul {
@@ -1686,11 +1687,11 @@ template {
 }
 
 .modal__title {
+  margin: 0 0 15px 0;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
-  margin-bottom: 15px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -1711,6 +1712,25 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: e0e0e0;
+}
+
+.modal__send-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #e0e0e0;
 }
 
 @media (max-width: 1200px) {
