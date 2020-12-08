@@ -1,14 +1,6 @@
 
 .packages
 	padding: 40px 0 70px 0
-	&__icon
-		margin-right: 15px
-	&__info-text
-		font-style: normal
-		font-weight: normal
-		font-size: 14px
-		line-height: 160.6%
-		margin-bottom: 45px
 	&__title
 		ffont-style: normal
 		font-weight: bold
@@ -21,83 +13,27 @@
 	&-wrapper
 		display: grid
 		grid-template-columns: repeat(3, 1fr)
-		grid-template-rows: repeat(2, minmax(500px, auto))
+		grid-template-rows: repeat(2, 1fr)
+		// grid-template-rows: repeat(2, minmax(500px, auto))
 		grid-gap: 30px
 	&__card
 		position: relative
 		display: flex
-		align-items: flex-end
-		padding: 250px 21px 25px 32px
-		width: 350px
-		height: 500px
+		flex-direction: column
 		border-radius: 10px
 		overflow: hidden
 		background-color: $dark
 		&--large
-			padding: 47px 21px 30px 411px
+			display: flex
+			flex-direction: row
+			grid-column: span 2
 		&-image
-			position: absolute
-			left: 0
-			top: 0
 			width: 100%
-			height: 50%
+			height: 250px
 			object-fit: cover
 			&--large
-				width: 50%
-				height: 100%
-		&-info
-			color: $light
-			width: 100%
-		&-price
-			display: flex
-			align-items: center
-			justify-content: space-between
-		&-pricetag
-			font-style: normal
-			font-weight: normal
-			font-size: 14px
-			line-height: 18px
-			text-decoration-line: line-through
-			margin-top: 21px
-			&--large
-				margin-top: 33px
-			&-new
-				font-style: normal
-				font-weight: bold
-				font-size: 24px
-				line-height: 30px
-		&-button
-			font-style: normal
-			font-weight: 600
-			font-size: 14px
-			line-height: 19px
-			color: $light
-			padding: 11px 27px
-			border: none
-			background-color: $primary
-			border-radius: 4px
-			cursor: pointer
-		&-title
-			font-style: normal
-			font-weight: bold
-			font-size: 18px
-			line-height: 23px
-			margin-top: 0
-			margin-bottom: 23px
-			&--large
-				margin-bottom: 25px
-				margin-top: 5px
-		&-text
-			font-style: normal
-			font-weight: normal
-			font-size: 12px
-			line-height: 15px
-			margin-bottom: 9px
-			&--transform
-				display: inline-block
-				transform: translateY(-15%)
-			&--large
-				margin-bottom: 9px
+				max-width: 366px
+				min-height: 500px
 		&-offer
 			top: 26px
 			left: 0
@@ -105,7 +41,7 @@
 			background-color: #EC1F46
 			padding: 4px 9px
 			border-radius: 0px 4px 4px 0px
-			color: #fff
+			color: $light
 			font-style: normal
 			font-weight: 600
 			font-size: 8px
@@ -117,8 +53,82 @@
 				font-weight: 600
 				font-size: 12px
 				line-height: 15px
-		&--large
+		&-info
 			display: flex
-			grid-column: span 2
-			width: 730px
-			height: 500px
+			flex-direction: column
+			padding: 30px 19px 25px 32px
+			color: $light
+			&--large
+				max-width: 366px
+				padding: 46px 21px 30px 44px
+				margin: 0
+		&-stars
+			display: flex
+			justify-content: space-between
+			max-width: 48px
+			margin-bottom: 5px
+		&-title
+			font-style: normal
+			font-weight: bold
+			font-size: 18px
+			line-height: 23px
+			margin-top: 0
+			margin-bottom: 23px
+			&--large
+				margin-top: 0
+				margin-bottom: 27px
+		&-description
+			font-style: normal
+			font-weight: normal
+			font-size: 14px
+			line-height: 160.6%
+			margin-top: 0
+			margin-bottom: 42px
+		&-ul
+			list-style: none
+			padding: 0
+			margin-top: 0
+			margin-bottom: 13px
+			&--large
+				margin-bottom: 25px
+		&-icon
+			margin-right: 12px
+		&-text
+			font-style: normal
+			font-weight: normal
+			font-size: 12px
+			line-height: 15px
+			margin-bottom: 8px
+			&--transform
+				display: inline-block
+				transform: translateY(-15%)
+			&--large
+				margin-bottom: 9px
+		&-discount
+			font-style: normal
+			font-weight: normal
+			font-size: 14px
+			text-decoration-line: line-through
+			line-height: 18px
+			&--large
+				margin-top: 0
+		&-booking
+			display: flex
+			align-items: center
+			justify-content: space-between
+		&-price
+			font-style: normal
+			font-weight: bold
+			font-size: 24px
+			line-height: 30px
+		&-button
+			font-style: normal
+			font-weight: 600
+			font-size: 14px
+			line-height: 19px
+			color: $light
+			padding: 11px 27px
+			border: none
+			background-color: $primary
+			border-radius: 4px
+			cursor: pointer
