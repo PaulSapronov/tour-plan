@@ -1704,6 +1704,8 @@ template {
 .modal__dialog--visible {
   visibility: visible;
   opacity: 1;
+  max-height: 100%;
+  overflow: auto;
 }
 
 .modal__close {
@@ -1995,6 +1997,10 @@ template {
   .footer__disclaimer-ul {
     margin-left: 0;
   }
+  .modal__dialog--visible {
+    width: 400px;
+    padding: 33px 48px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -2242,6 +2248,10 @@ template {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .modal__dialog--visible {
+    max-width: 400px;
+    padding: 33px 48px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2456,6 +2466,10 @@ template {
     -ms-grid-column: 1;
     grid-column: 1;
     margin: 0;
+  }
+  .modal__dialog--visible {
+    max-width: 320px;
+    padding: 33px 28px;
   }
 }
 

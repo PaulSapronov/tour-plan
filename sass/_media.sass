@@ -160,6 +160,11 @@
 			grid-column: 1 / 7
 			&-ul
 				margin-left: 0
+	.modal
+		&__dialog
+			&--visible
+				width: 400px
+				padding: 33px 48px
 //!                                          @media for 768px!
 @media (max-width: 768px)
 	body
@@ -334,7 +339,11 @@
 			margin-right: 0
 		&__message
 			flex-basis: 100%
-
+	.modal
+		&__dialog
+			&--visible
+				max-width: 400px
+				padding: 33px 48px
 //!                                          @media for 576px!
 @media	( max-width: 576px )
 	.logo
@@ -491,6 +500,13 @@
 			&-pay
 				grid-column: 1
 				margin: 0
+
+	.modal
+		&__dialog
+			&--visible
+				max-width: 320px
+				padding: 33px 28px
+
 //!                                          @media for 480px!
 @media ( max-width: 480px )
 	.hotel
