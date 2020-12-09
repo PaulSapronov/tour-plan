@@ -17,10 +17,14 @@
 			flex-basis: 100%
 		&__legal
 			margin-left: 0
+
 	.packages
 		&-wrapper
 			grid-gap: 20px
 		&__card
+			&-image
+				&--large
+					max-width: 315px
 			&-info
 				&--large
 					max-width: 317px
@@ -71,6 +75,7 @@
 		padding: 29px 22px 26px 23px
 	.map
 		width: 340px
+
 	.packages
 		padding-bottom: 60px
 		&__title
@@ -82,6 +87,7 @@
 			&-image
 				&--large
 					max-width: 350px
+
 	.reviews
 		padding: 40px 0 60px 0
 		&__title
@@ -172,6 +178,7 @@
 	.container
 		max-width: 576px
 		width: 87%
+
 	.navbar
 		&__mobile
 			&--fixed
@@ -217,6 +224,7 @@
 					&--visible
 						display: block
 						margin-bottom: 28px
+
 	.menu
 		&-button
 			display: flex
@@ -233,6 +241,7 @@
 				width: 16px
 				height: 1px
 				background-color: $text-color
+
 	.user
 		&__name
 			&--light
@@ -258,6 +267,7 @@
 			&__offer
 				order: -1
 				margin-left: 0
+
 	.hotel
 		&-right
 			flex-direction: column
@@ -275,28 +285,39 @@
 		&-wrapper
 			grid-gap: 15px
 		&__card
+			height: 450px
+			&--large
+				max-width: 700px
 			&-title
 				margin-bottom: 10px
 			&-image
-				height: 200px
+				height: 225px
 				&--large
-					max-width: 290px
-					min-height: 400px
+					width: 50%
+					height: 100%
 			&-info
-				width: 100%
-				padding: 15px
+				padding: 10px 15px 10px 15px
 				&--large
+					padding: 25px 15px 15px 15px
 					max-width: 50%
 					height: 100%
 			&-stars
-				margin-bottom: 10
+				margin-bottom: 10px
 			&-ul
-				margin-bottom: 0
+				margin-bottom: 0px
 				&--large
 					margin-bottom: 10px
 			&-description
-				margin-bottom: 20px
+				margin-bottom: 16px
 				font-size: 12px
+			&-discount
+				&--large
+					margin-bottom: 10px
+			&-booking
+				flex-direction: column
+				align-items: flex-start
+			&-button
+				width: 100%
 
 	.newsletter
 		&-wrapper
@@ -381,8 +402,10 @@
 			&--large
 				flex-direction: column
 			&-image
-				max-width: 100%
-				min-height: 200px
+				&--large
+					max-width: 100%
+					width: 730px
+					height: 225px
 			&-offer
 				&--large
 					top: 26px
@@ -398,6 +421,10 @@
 				display: none
 			&-description
 				display: none
+			&-ul
+				margin-bottom: 0
+			&-discount
+				margin-bottom: 0
 		&__title
 			font-size: 18px
 			line-height: 23px
