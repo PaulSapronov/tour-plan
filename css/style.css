@@ -967,6 +967,7 @@ template {
 }
 
 .packages__card-info--large {
+  width: 366px;
   padding: 46px 21px 30px 44px;
 }
 
@@ -2342,6 +2343,7 @@ template {
     width: 60px;
   }
   .packages__card-info {
+    width: 100%;
     max-width: 100%;
     padding: 10px 20px;
   }
