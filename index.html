@@ -26,7 +26,7 @@
 				</a>
 
 				<form action="#" class="search navbar__search navbar__search--mobile--hidden">
-					<input type="text" class="search__input" placeholder="Search Location">
+					<input type="search" class="search__input" placeholder="Search Location">
 					<button class="search__button">
 						<img src="img/svg/search.svg" alt="Icon: search">
 					</button>
@@ -60,7 +60,7 @@
 
 						<li class="navbar-menu__item navbar-menu__item--mobile--visible">
 							<form action="#" class="search navbar__search navbar__search--mobile--visible">
-								<input type="text" class="search__input" placeholder="Search Location">
+								<input type="search" class="search__input" placeholder="Search Location">
 								<button class="search__button">
 									<img src="img/svg/search.svg" alt="Icon: search">
 								</button>
@@ -381,8 +381,10 @@
 			<h2 class="newsletter-title newsletter__title" data-aos="fade-up">subscribe to our
 				<span class="newsletter-title__strong">Newsletter</span>
 			</h2>
-			<form action="send.php" method="POST" class="subscribe newsletter__subscribe" data-aos="fade-up">
-				<input type="text" class="subscribe__input" placeholder="Your email address" name="email">
+			<form action="send.php" method="POST" class="subscribe newsletter__subscribe form" data-aos="fade-up">
+				<!-- <div class="subscribe__input-group"> -->
+				<input type="email" class="subscribe__input" placeholder="Your email address" name="email" required>
+				<!-- </div> -->
 				<button class="subscribe__button">Send</button>
 			</form>
 		</div>
@@ -568,9 +570,16 @@
 				<!-- ./footer__contect-details -->
 				<div class="footer__contact-form">
 					<h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-					<form action="send.php" method="POST" class="footer__form">
-						<input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
-						<input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
+					<form action="send.php" method="POST" class="form footer__form">
+						<div class="footer__input-group">
+							<input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required
+								minlenght="2">
+						</div>
+						<div class="footer__input-group">
+							<input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone"
+								data-mask="+7(000) 000-00-00" required>
+						</div>
+
 						<textarea class="message footer__message" placeholder="Message" name="message"></textarea>
 						<div class="footer__send-form">
 							<button class="button footer__button" type="submit">Send</button>
@@ -614,10 +623,11 @@
 			</a>
 
 			<h3 class="modal__title">Booking</h3>
-			<form action="send.php" method="POST" class="modal__form">
-				<input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
-				<input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
-				<input type="text" class="input modal__input" placeholder="Email*" name="email">
+			<form action="send.php" method="POST" class=" form modal__form ">
+				<input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required>
+				<input type="tel" class="input modal__input" placeholder="Phone Number*" name="phone"
+					data-mask="+7(000)000-00-00" required>
+				<input type="email" class="input modal__input" placeholder="Email*" name="email" required>
 				<textarea class="message modal__message" placeholder="Message" name="message"></textarea>
 
 				<div class="modal__send-form">
@@ -632,10 +642,11 @@
 
 	<script src="js/jquery-3.5.1.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/jquery.mask.min.js"></script>
 	<script src="js/parallax.min.js"></script>
 	<script src="js/swiper-bundle.min.js"></script>
 	<script src="js/aos.js"></script>
-	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 

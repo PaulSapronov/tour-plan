@@ -118,7 +118,8 @@
 			grid-template-columns: repeat(6, 1fr)
 			grid-row-gap: 45px
 		&__input
-			flex-basis: 48%
+			&-group
+				flex-basis: 48%
 		&__logo
 			grid-row: 1 / 2
 			grid-column: span 2
@@ -356,8 +357,9 @@
 		&__legal
 			margin-left: 0
 		&__input
-			flex-basis: 100%
-			margin-right: 0
+			&-group
+				flex-basis: 100%
+				margin-right: 0
 		&__message
 			flex-basis: 100%
 	.modal
