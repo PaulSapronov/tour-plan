@@ -5,12 +5,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Best Tour Plan - Hotel Booking</title>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link
 		href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700&family=Nunito:wght@400;600;800&display=swap"
 		rel="stylesheet">
 
 	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/aos.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -120,13 +123,17 @@
 				<div class="hotel-info__text">
 					<div class="hotel-wrapper">
 						<div class="stars">
-
 						</div>
-						<h1 class="hotel-name hotel-info__name">Message sent!</h1>
+						<h1 class="hotel-name hotel-info__name hotel-info__name">Message sent!</h1>
 					</div>
-					<p class="hotel-description hotel-info__description">
+					<p class="hotel-description hotel-info__description hotel-info__description-message">
 						Our manager will call you back in 5 minutes.
 					</p>
+					
+					<form action="index.html">
+						<button class="button">Back Home</button>
+					</form>
+
 				</div>
 				<!-- /.hotel-info__text -->
 			</div>
@@ -239,30 +246,42 @@
 				<!-- ./footer__contect-details -->
 				<div class="footer__contact-form">
 					<h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-					<form action="send.php" method="POST" class="footer__form">
-						<input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
-						<input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
-						<textarea class="footer__message" placeholder="Message" name="message"></textarea>
-						<button class="button footer__button" type="submit">Send</button>
-						<span class="footer__info">* Required Fields</span>
+					<form action="send.php" method="POST" class="form footer__form">
+						<div class="footer__input-group">
+							<input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required minlength="2">
+						</div>
+						<div class="footer__input-group">
+							<input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone"
+								data-mask="+7(000) 000-00-00" required minlength="16">
+						</div>
+
+						<textarea class="message footer__message" placeholder="Message" name="message"></textarea>
+						<div class="footer__send-form">
+							<button class="button footer__button" type="submit">Send</button>
+							<span class="footer__info">* Required Fields</span>
+						</div>
+
 					</form>
 				</div>
 				<!-- /.footer__contact-form -->
-				<div class="footer__disclaimer-links">
-					<ul class="footer__disclaimer-ul">
-						<li class="footer__disclaimer-item">
-							<a href="" class="footer__disclaimer-link">Disclaimer</a>
-						</li>
-						<li class="footer__disclaimer-item">
-							<a href="" class="footer__disclaimer-link">Conditions of use</a>
-						</li>
-						<li class="footer__disclaimer-item">
-							<a href="" class="footer__disclaimer-link">Cancellation policy</a>
-						</li>
-					</ul>
-				</div>
-				<div class="footer__disclaimer-pay">
-					<img src="img/pay-methods.png" alt="Icon: " class="footer__disclaimer-paymethods">
+
+				<div class="footer__disclaimer">
+					<div class="footer__disclaimer-links">
+						<ul class="footer__disclaimer-ul">
+							<li class="footer__disclaimer-item">
+								<a href="" class="footer__disclaimer-link">Disclaimer</a>
+							</li>
+							<li class="footer__disclaimer-item">
+								<a href="" class="footer__disclaimer-link">Conditions of use</a>
+							</li>
+							<li class="footer__disclaimer-item">
+								<a href="" class="footer__disclaimer-link">Cancellation policy</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__disclaimer-pay">
+						<img src="img/pay-methods.png" alt="Icon: " class="footer__disclaimer-paymethods">
+					</div>
 				</div>
 			</div>
 			<!-- /.footer-wrapper -->
