@@ -1518,6 +1518,9 @@ template {
   font-size: 12px;
   line-height: 15px;
   color: #e0e0e0;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 .footer__ul {
