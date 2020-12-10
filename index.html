@@ -572,11 +572,11 @@
 					<h3 class="footer__title footer__title--mb-3">Send us a message</h3>
 					<form action="send.php" method="POST" class="form footer__form">
 						<div class="footer__input-group">
-							<input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required>
+							<input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required minlength="2">
 						</div>
 						<div class="footer__input-group">
 							<input type="tel" class="input footer__input" placeholder="Phone Number*" name="phone"
-								data-mask="+7(000) 000-00-00" required>
+								data-mask="+7(000) 000-00-00" required minlength="16">
 						</div>
 
 						<textarea class="message footer__message" placeholder="Message" name="message"></textarea>
@@ -620,11 +620,11 @@
 			<a href="#" class="modal__close">
 				<img src="img/svg/close.svg" alt="Icon: ">
 			</a>
-			<!-- data-mask="+7(000)000-00-00" -->
+			
 			<h3 class="modal__title">Booking</h3>
 			<form action="send.php" method="POST" class="form modal__form ">
-				<input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required>
-				<input type="text" class="input modal__input" placeholder="Phone Number*" name="phone" required>
+				<input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
+				<input type="tel" data-mask="+7(000)000-00-00" class="input modal__input" placeholder="Phone Number*" name="phone" required minlength="16">
 				<input type="email" class="input modal__input" placeholder="Email*" name="email" required>
 				<textarea class="message modal__message" placeholder="Message" name="message"></textarea>
 

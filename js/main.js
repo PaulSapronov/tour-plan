@@ -71,6 +71,7 @@ $(document).ready(function () {
 				},
 				phone: {
 					required: 'Please specify your phone number',
+					minlength: 'Your phone must be in the format of +7(XXX)XXX-XX-XX"'
 				},
 			},
 		});
