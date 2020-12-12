@@ -17,7 +17,7 @@ $message = $_POST['message'];
     <h2>Новое бронирование на</h2>
     <b>Имя:</b> $name<br>
     <b>Телефон:</b> $phone<br>
-    <b>Сообщение:</b><br>$email<br>
+    <b>Почта:</b>$email<br><br>
 		<b>Сообщение:</b><br>$message
 		";
 

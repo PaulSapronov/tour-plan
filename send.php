@@ -16,15 +16,15 @@ if ($email) {
     $title = "Новая подписка на Best Tour Plan";
     $body = "
     <h2>Новая подписка</h2>
-    <b>Сообщение:</b><br>$email
+    <b>Почта:</b>$email
     ";
 }
 else {
     $title = "Новое обращение Best Tour Plan";
     $body = "
     <h2>Новое обращение</h2>
-    <b>Имя:</b> $name<br>
-    <b>Телефон:</b> $phone<br><br>
+    <b>Имя:</b>$name<br>
+    <b>Телефон:</b>$phone<br><br>
     <b>Сообщение:</b><br>$message
     ";
 }
