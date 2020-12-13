@@ -1978,6 +1978,9 @@ template {
     font-size: 12px;
     line-height: 15px;
   }
+  .navbar-menu__item:hover {
+    text-decoration: none;
+  }
   .search__input {
     width: 340px;
   }
@@ -2007,6 +2010,12 @@ template {
     width: 340px;
     padding: 29px 22px 26px 23px;
   }
+  .booking__button:hover {
+    text-decoration: none;
+  }
+  .booking__num:hover {
+    text-decoration: none;
+  }
   .map {
     width: 340px;
   }
@@ -2021,8 +2030,14 @@ template {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
+  .packages__card-button:hover {
+    text-decoration: none;
+  }
   .packages__card-image--large {
     max-width: 350px;
+  }
+  .subscribe__button:hover {
+    text-decoration: none;
   }
   .reviews {
     padding: 40px 0 45px 0;
@@ -2059,6 +2074,9 @@ template {
     width: 340px;
     height: 255px;
   }
+  .card__button:hover {
+    text-decoration: none;
+  }
   .footer {
     padding-top: 71px;
   }
@@ -2092,6 +2110,9 @@ template {
     margin-left: -55px;
     margin-top: 10px;
   }
+  .footer__link-icon:hover {
+    border: none;
+  }
   .footer__categories {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
@@ -2122,8 +2143,14 @@ template {
   .footer__item-transform {
     margin-top: 1px;
   }
+  .footer__item-transform:hover {
+    text-decoration: none;
+  }
   .footer__item--mb-2:last-child {
     margin-bottom: 10px;
+  }
+  .footer__item:hover {
+    text-decoration: none;
   }
   .footer__icon-wrapper {
     margin-left: 5px;
@@ -2137,6 +2164,9 @@ template {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .footer__button:hover {
+    text-decoration: none;
+  }
   .footer__disclaimer {
     -ms-grid-column: 1;
     -ms-grid-column-span: 6;
@@ -2144,6 +2174,9 @@ template {
   }
   .footer__disclaimer-ul {
     margin-left: 0;
+  }
+  .footer__disclaimer-link:hover {
+    text-decoration: none;
   }
   .modal__dialog--visible {
     width: 400px;
