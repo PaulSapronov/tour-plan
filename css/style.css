@@ -563,6 +563,12 @@ template {
   cursor: pointer;
 }
 
+.search__button:hover {
+  background-color: #8c031d;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
 .user {
   display: -webkit-box;
   display: -ms-flexbox;
